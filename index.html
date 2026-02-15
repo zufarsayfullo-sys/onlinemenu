@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Learning Dashboard</title>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --secondary: #4f46e5;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .menu-container {
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            letter-spacing: -0.025em;
+        }
+
+        .menu-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .menu-item:hover {
+            transform: translateY(-3px);
+            background: var(--primary);
+            border-color: var(--secondary);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+
+        .icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            width: 40px;
+            text-align: center;
+        }
+
+        .label {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .subtitle {
+            display: block;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            font-weight: normal;
+        }
+
+        /* Responsive colors for specific items */
+        .video:hover { background: #ef4444; } /* YouTube Red */
+        .grammar:hover { background: #10b981; } /* Green */
+        .vocab:hover { background: #f59e0b; } /* Amber */
+        .speaking:hover { background: #8b5cf6; } /* Purple */
+
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>English Lesson 1</h1>
+        <div class="menu-grid">
+            
+            <a href="https://www.youtube.com/watch?v=n-uTwzzVnsg" class="menu-item video" target="_blank">
+                <span class="icon">📺</span>
+                <div style="text-align: left;">
+                    <span class="label">1. Video Lesson</span>
+                    <span class="subtitle">Watch: "To Be" Verb Explained</span>
+                </div>
+            </a>
+
+            <a href="https://zufarsayfullo-sys.github.io/onlinelesson1grammar/" class="menu-item grammar" target="_blank">
+                <span class="icon">📝</span>
+                <div style="text-align: left;">
+                    <span class="label">2. Grammar Quiz</span>
+                    <span class="subtitle">Practice: Am, Is, Are</span>
+                </div>
+            </a>
+
+            <a href="https://zufarsayfullo-sys.github.io/online1vocab/" class="menu-item vocab" target="_blank">
+                <span class="icon">📚</span>
+                <div style="text-align: left;">
+                    <span class="label">3. Vocab Quiz</span>
+                    <span class="subtitle">Learn: Essential Keywords</span>
+                </div>
+            </a>
+
+            <a href="https://zufarsayfullo-sys.github.io/online1speaking/" class="menu-item speaking" target="_blank">
+                <span class="icon">🗣️</span>
+                <div style="text-align: left;">
+                    <span class="label">4. Speaking Practice</span>
+                    <span class="subtitle">Record your voice</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
